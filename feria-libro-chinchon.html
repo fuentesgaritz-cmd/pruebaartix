@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07070b" />
+  <meta name="description" content="Proyecto Feria del Libro de Chinchón 2026 — Aritz Fuentes" />
+  <title>Feria del Libro de Chinchón — Aritz Fuentes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="project-page">
+  <div class="noise"></div>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <div class="ambient ambient-c"></div>
+
+  <header class="glass-nav">
+    <a class="brand" href="index.html#inicio" aria-label="Aritz Fuentes">
+      <span>Aritz Fuentes</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Abrir menú" data-i18n-aria="common.menuOpen" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <div class="nav-panel">
+      <nav class="main-nav" aria-label="Principal">
+        <a href="index.html#inicio" data-i18n="nav.home">Inicio</a>
+        <a href="index.html#trabajos" data-i18n="nav.work">Trabajos</a>
+        <a href="index.html#sobre-mi" data-i18n="nav.about">Sobre mí</a>
+        <a href="index.html#contacto" data-i18n="nav.contact">Contacto</a>
+      </nav>
+
+      <div class="language-switcher" aria-label="Selector de idioma">
+        <button data-lang="es" class="active">ES</button>
+        <button data-lang="eu">EU</button>
+        <button data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <div class="project-hero-grid">
+        <div class="project-hero-copy">
+          <a class="back-link" href="index.html#trabajos">
+            <span>←</span>
+            <span data-i18n="feria.back">Volver a proyectos</span>
+          </a>
+
+          <p class="section-number">01</p>
+
+          <h1 data-i18n="feria.heroTitle">Feria del Libro de Chinchón</h1>
+
+          <p class="project-subtitle" data-i18n="feria.heroSubtitle">
+            Un encargo del Ayuntamiento de Chinchón para diseñar el cartel principal y el díptico de la XVII Feria del Libro de 2026.
+          </p>
+
+          <p class="project-description" data-i18n="feria.compactText">
+            El proyecto debía construir una imagen ilustrada reconocible de Chinchón y, al mismo tiempo, incorporar a Pinocho como eje narrativo por la conmemoración de los 200 años del nacimiento de Carlo Collodi. La propuesta también integra el centenario de Josefina Aldecoa: Pinocho aparece leyendo “El arte del niño”, una referencia elegida por su reflexión sobre la relación entre la infancia y la expresión creativa, conectando así literatura, imaginación y cultura dentro de una misma escena.
+          </p>
+
+          <div class="project-tags">
+            <span data-i18n="feria.tag1">Cliente · Ayuntamiento de Chinchón</span>
+            <span data-i18n="feria.tag2">Encargo · Cartel ilustrado + díptico</span>
+            <span data-i18n="feria.tag3">Año · 2026</span>
+          </div>
+        </div>
+
+        <figure class="project-hero-poster glass-frame">
+          <img src="assets/feria-poster.png" alt="Cartel Feria del Libro de Chinchón 2026" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="diptico-section">
+      <div class="project-story-head">
+        <p class="section-number">02</p>
+        <h2 data-i18n="feria.dipticoTitle">Díptico interactivo</h2>
+      </div>
+
+      <p class="diptico-intro" data-i18n="feria.dipticoIntro">
+        El díptico aparece cerrado mostrando la portada. Pulsa sobre él para abrirlo y ver el interior.
+      </p>
+
+      <div class="diptico-viewer">
+        <div class="fold-scene" id="fold-scene">
+          <div class="fold-shadow"></div>
+
+          <div class="interior-spread">
+            <img src="assets/feria-diptico-page-2.jpg" alt="Interior del díptico de la Feria del Libro de Chinchón" />
+          </div>
+
+          <button class="leaflet-cover" id="leaflet-toggle" type="button" aria-expanded="false">
+            <span class="leaflet-label" data-i18n="feria.dipticoClick">Abrir díptico</span>
+            <span class="leaflet-spine"></span>
+            <img src="assets/feria-diptico-cover.jpg" alt="Portada del díptico de la Feria del Libro de Chinchón" />
+          </button>
+        </div>
+
+        <div class="diptico-actions">
+          <button class="glass-button ghost small" id="leaflet-secondary-toggle" type="button">
+            <span data-i18n="feria.dipticoButtonOpen">Abrir díptico</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

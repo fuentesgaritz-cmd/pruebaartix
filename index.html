@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a10" />
+  <meta name="description" content="Portfolio de diseño gráfico de Aritz Fuentes" />
+  <title>Aritz Fuentes — Graphic Design</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <div class="ambient ambient-c"></div>
+
+  <header class="glass-nav">
+    <a class="brand" href="#inicio" aria-label="Aritz Fuentes">
+      <span>Aritz Fuentes</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Abrir menú" data-i18n-aria="common.menuOpen" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <div class="nav-panel">
+      <nav class="main-nav" aria-label="Principal">
+        <a href="#inicio" data-i18n="nav.home">Inicio</a>
+        <a href="#trabajos" data-i18n="nav.work">Trabajos</a>
+        <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      </nav>
+
+      <div class="language-switcher" aria-label="Selector de idioma">
+        <button data-lang="es" class="active">ES</button>
+        <button data-lang="eu">EU</button>
+        <button data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-orbit hero-orbit-one"></div>
+      <div class="hero-orbit hero-orbit-two"></div>
+
+      <div class="hero-kicker glass-chip">
+        <span class="status-dot"></span>
+        <span data-i18n="hero.kicker">Diseñador gráfico · Bilbao</span>
+      </div>
+
+      <div class="hero-copy">
+        <h1>
+          <span data-i18n="hero.line1">Diseño que</span>
+          <span class="hero-highlight experimental" data-i18n="hero.line2">se siente</span>
+          <span data-i18n="hero.line3">antes de explicarse.</span>
+        </h1>
+
+        <p data-i18n="hero.text">
+          Identidad visual, cartelería, editorial y dirección de arte desde una mirada tipográfica, cultural y experimental.
+        </p>
+      </div>
+
+      <div class="hero-actions">
+        <a class="glass-button primary" href="#trabajos">
+          <span data-i18n="hero.cta">Explorar proyectos</span>
+          <span>↘</span>
+        </a>
+        <a class="glass-button ghost" href="#contacto">
+          <span data-i18n="hero.cta2">Hablemos</span>
+          <span>↗</span>
+        </a>
+      </div>
+
+      <div class="hero-meta">
+        <span data-i18n="hero.meta1">Disponible para proyectos seleccionados</span>
+        <span data-i18n="hero.meta2">2026</span>
+      </div>
+    </section>
+
+    <section class="marquee-section" aria-hidden="true">
+      <div class="marquee-track">
+        <span>IDENTITY · POSTERS · EDITORIAL · TYPOGRAPHY · ART DIRECTION · </span>
+        <span>IDENTITY · POSTERS · EDITORIAL · TYPOGRAPHY · ART DIRECTION · </span>
+      </div>
+    </section>
+
+    <section class="work-section" id="trabajos">
+      <div class="section-intro">
+        <div>
+          <p class="section-number">01</p>
+          <h2 data-i18n="work.title">Trabajos seleccionados</h2>
+        </div>
+        <p data-i18n="work.subtitle">
+          Una selección de proyectos donde concepto, forma y contexto construyen una identidad reconocible.
+        </p>
+      </div>
+
+      <div class="projects-grid-9">
+        <article class="grid-project-card">
+          <a href="feria-libro-chinchon.html" class="grid-project-link">
+            <div class="grid-project-media">
+              <img src="assets/feria-home-cover-final.png" alt="Feria del Libro de Chinchón 2026" />
+            </div>
+            <div class="grid-project-caption">
+              <div>
+                <p class="grid-project-number">01</p>
+                <h3 data-i18n="projects.p1.title">Feria del Libro de Chinchón</h3>
+              </div>
+              <span class="grid-project-arrow">↗</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="grid-project-card">
+          <a href="noche-cuentos-chinchon.html" class="grid-project-link">
+            <div class="grid-project-media project-visual--image">
+              <img
+                class="project-cover-image"
+                src="assets/noche-cuentos-home-cover-v2.png"
+                alt="Detalle del cartel de Noche de los Cuentos de Chinchón"
+              />
+            </div>
+            <div class="grid-project-caption">
+              <div>
+                <p class="grid-project-number">02</p>
+                <h3 data-i18n="projects.p2.title">Noche de los Cuentos</h3>
+              </div>
+              <span class="grid-project-arrow">↗</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="grid-project-card">
+          <a href="#" class="grid-project-link">
+            <div class="grid-project-media placeholder-c">
+              <span class="mini-bilbao">BILBAO</span>
+            </div>
+            <div class="grid-project-caption">
+              <div>
+                <p class="grid-project-number">03</p>
+                <h3 data-i18n="projects.p3.title">Imagina Bilbao</h3>
+              </div>
+              <span class="grid-project-arrow">↗</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="grid-project-card">
+          <a href="#" class="grid-project-link">
+            <div class="grid-project-media placeholder-d">
+              <span class="mini-72">72</span>
+              <span class="mini-california">CALIFORNIA</span>
+            </div>
+            <div class="grid-project-caption">
+              <div>
+                <p class="grid-project-number">04</p>
+                <h3 data-i18n="projects.p4.title">California 1972</h3>
+              </div>
+              <span class="grid-project-arrow">↗</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="grid-project-card">
+          <a href="#" class="grid-project-link">
+            <div class="grid-project-media placeholder-e">
+              <span class="placeholder-word">TYPE</span>
+            </div>
+            <div class="grid-project-caption">
+              <div>
+                <p class="grid-project-number">05</p>
+                <h3 data-i18n="projects.p5.title">Proyecto editorial</h3>
+              </div>
+              <span class="grid-project-arrow">↗</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="grid-project-card">
+          <a href="#" class="grid-project-link">
+            <div class="grid-project-media placeholder-f">
+              <span class="placeholder-word">FORM</span>
+            </div>
+            <div class="grid-project-caption">
+              <div>
+                <p class="grid-project-number">06</p>
+                <h3 data-i18n="projects.p6.title">Identidad visual</h3>
+              </div>
+              <span class="grid-project-arrow">↗</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="grid-project-card">
+          <a href="#" class="grid-project-link">
+            <div class="grid-project-media placeholder-g">
+              <span class="placeholder-word">POSTER</span>
+            </div>
+            <div class="grid-project-caption">
+              <div>
+                <p class="grid-project-number">07</p>
+                <h3 data-i18n="projects.p7.title">Cartelería cultural</h3>
+              </div>
+              <span class="grid-project-arrow">↗</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="grid-project-card">
+          <a href="#" class="grid-project-link">
+            <div class="grid-project-media placeholder-h">
+              <span class="placeholder-word">BOOK</span>
+            </div>
+            <div class="grid-project-caption">
+              <div>
+                <p class="grid-project-number">08</p>
+                <h3 data-i18n="projects.p8.title">Diseño editorial</h3>
+              </div>
+              <span class="grid-project-arrow">↗</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="grid-project-card">
+          <a href="#" class="grid-project-link">
+            <div class="grid-project-media placeholder-i">
+              <span class="placeholder-word">LAB</span>
+            </div>
+            <div class="grid-project-caption">
+              <div>
+                <p class="grid-project-number">09</p>
+                <h3 data-i18n="projects.p9.title">Experimentos gráficos</h3>
+              </div>
+              <span class="grid-project-arrow">↗</span>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="manifesto-section">
+      <div class="manifesto-glass">
+        <p class="section-number">02</p>
+        <p class="manifesto-line">
+          <span data-i18n="manifesto.line1">No busco decorar.</span>
+          <span class="experimental accent-text" data-i18n="manifesto.line2">Busco construir lenguaje.</span>
+        </p>
+
+        <div class="manifesto-grid">
+          <p data-i18n="manifesto.text1">
+            Cada proyecto parte de una idea, una tensión o una historia. El sistema visual aparece después.
+          </p>
+          <p data-i18n="manifesto.text2">
+            Tipografía, composición, imagen y ritmo funcionan como piezas de una misma voz.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="sobre-mi">
+      <div class="about-heading">
+        <p class="section-number">03</p>
+        <h2 data-i18n="about.title">Sobre mí</h2>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-statement">
+          <p data-i18n="about.big">
+            Soy Aritz Fuentes, diseñador gráfico. Me interesan las identidades que se recuerdan por cómo piensan, no solo por cómo se ven.
+          </p>
+        </div>
+
+        <div class="about-details">
+          <div class="glass-card info-card">
+            <span data-i18n="about.focusLabel">Áreas</span>
+            <p data-i18n="about.focus">Identidad visual, cartelería, editorial, tipografía, ilustración y dirección de arte.</p>
+          </div>
+
+          <div class="glass-card info-card">
+            <span data-i18n="about.baseLabel">Base</span>
+            <p data-i18n="about.base">Bilbao · Euskadi</p>
+          </div>
+
+          <div class="glass-card info-card">
+            <span data-i18n="about.approachLabel">Enfoque</span>
+            <p data-i18n="about.approach">Conceptual, contemporáneo, cultural y experimental.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <div class="contact-backdrop"></div>
+      <div class="contact-panel">
+        <p class="section-number light">04</p>
+        <p class="contact-overline" data-i18n="contact.overline">¿Tienes un proyecto en mente?</p>
+
+        <h2>
+          <span data-i18n="contact.line1">Hagamos algo</span>
+          <span class="experimental" data-i18n="contact.line2">difícil de olvidar.</span>
+        </h2>
+
+        <a class="contact-mail" href="mailto:hola@aritzfuentes.com">
+          hola@aritzfuentes.com <span>↗</span>
+        </a>
+
+        <div class="contact-bottom">
+          <div class="social-links">
+            <a href="#" target="_blank" rel="noreferrer">Instagram ↗</a>
+            <a href="#" target="_blank" rel="noreferrer">Behance ↗</a>
+            <a href="#" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          </div>
+
+          <p>© <span id="year"></span> Aritz Fuentes</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
